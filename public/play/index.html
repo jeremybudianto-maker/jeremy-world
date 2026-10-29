@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000"><meta name="description" content="Play through Jeremy's story in an original 8-bit platform game.">
+<title>Super Jeremy Bro's</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio id="music" src="assets/mario-theme.mp3" loop preload="auto"></audio>
+<audio id="victory" src="assets/level-complete.mp3" preload="auto"></audio>
+<audio id="pipe-sound" src="assets/pipe.mp3" preload="auto"></audio>
+<main id="game" aria-label="Jeremy's interactive story">
+<canvas id="screen" width="512" height="288" role="img" aria-label="A side-scrolling platform game. Use Right Arrow or Space to advance, Left Arrow to go back, and Up Arrow to jump."></canvas>
+<nav id="controls" aria-label="Game controls">
+<button id="back" aria-label="Back one story beat (Left Arrow)">BACK</button>
+<button id="next" aria-label="Advance the story (Right Arrow or Space)">NEXT</button>
+<button id="jump" aria-label="Jump (Up Arrow)">JUMP</button>
+<button id="sound" aria-label="Unmute music and sound (M)" aria-pressed="false">UNMUTE</button>
+<button id="full" aria-label="Enter fullscreen (F)">FULLSCREEN</button>
+</nav>
+<p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true">Super Jeremy Bro's. Press Start.</p>
+<noscript>This interactive game needs JavaScript enabled.</noscript>
+</main>
+<script src="font.js"></script><script src="sprites.js"></script><script src="renderer.js"></script><script src="game.js"></script>
+</body>
+</html>

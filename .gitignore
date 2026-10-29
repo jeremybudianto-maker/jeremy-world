@@ -1,0 +1,34 @@
+# Dependencies and generated hosting output
+node_modules/
+.pnp.*
+.next/
+.vinext/
+dist/
+out/
+.wrangler/
+.vercel/
+.netlify/
+coverage/
+next-env.d.ts
+
+# Environment values, keys, and local hosting metadata
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+.openai/
+
+# Local tools and machine files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.swp
+work/
+outputs/
